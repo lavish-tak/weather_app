@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
 <body>
     <div class="wrapper">
         <h1>Weather App</h1>
         <div class="tab-container">
-            <p class="tab">Your Weather</p>
-            <p class="tab">Search Weather</p>
+            <p class="tab" data-user-weather>Your Weather</p>
+            <p class="tab" data-search-weather>Search Weather</p>
         </div>
 
         <div class="weather-container">
@@ -21,14 +21,14 @@
                 <p>Allow Access to get weather information</p>
                 <button class="btn">Grant Access</button>
             </div>
-            <form class="form-container">
+            <form class="form-container" data-searchForm>
                 <input placeholder="Search for location">
                 <button class="btn">
                     <img src="./search.png" alt="...." width="20" height="20" loading="lazy">
                 </button>
             </form>
             <div class="loading-container">
-                <img src="./loading.gif" width="100" height="100">
+                <img src="./loadinggif.gif" width="100" height="100">
                 <p>Loading</p>
             </div>
         </div>
@@ -50,17 +50,17 @@
         <div class="parameter-container">
 
             <div class="parameter">
-                <img src="./wind.jpg" >
+                <img src="./wind.png" width="100" height="100" >
                 <p>Wind Speed</p>
                 <p data-windspeed></p>
             </div>
             <div class="parameter">
-                <img src="./humidity.jpg" >
+                <img src="./humidity.png" width="100" height="100" >
                 <p>Humidity</p>
                 <p data-humidity></p>
             </div>
             <div class="parameter">
-                <img src="./clouds.png" >
+                <img src="./clouds.png" width="100" height="100" >
                 <p>Clouds</p>
                 <p data-Clouds></p>
             </div>

@@ -1,0 +1,29 @@
+body{
+    background-color: #23a2e1;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.parameter-container{
+    padding:3rem;
+    display: flex;
+    flex-direction: row;
+}
+.parameter{
+    padding: 0 1.4rem;
+
+}
+.tab.current-tab{
+    background-color: grey;
+    border-radius: 4px;
+}
