@@ -6,8 +6,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+.grant-location-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
 .user-info-container{
     display: flex;
     justify-content: center;

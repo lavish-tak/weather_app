@@ -12,3 +12,27 @@ let currentTab = userTab;
 const API_key = "60847f2a302151945777391ceece5023";
 currentTab.classList.add("current-tab");
 
+
+function switchtab(clickedTab){
+    if(clickedTab!=currentTab){
+       currentTab.classList.remove("current-tab");
+       currentTab=clickedTab;
+       currentTab.classList.add("current-tab");
+
+       if(!searchForm.classList.contains("activ")){
+        userInfoContainer.classList.remove("active");
+        grantAccessContainer.classList.remove("active");
+        searchForm.classList.add("active");
+       }
+       else{
+        searchForm.classList.remove("active");
+        userInfoContainer.classList.remove("active");
+       }
+    }
+}
+userTab.addEventListener('click',()=>{
+    switchtab(userTab);
+})
+searchTab.addEventListener('click',()=>{
+    switchtab(searchTab);
+})
