@@ -84,10 +84,10 @@
             countryIcon.src = `https://flagcdn.com/16x12/${weatherInfo.sys.country.toLowerCase()}.png`;
             desc.innerText = weatherInfo.weather[0].description;
             weatherIcon.src = `https://openweathermap.org/img/w/${weatherInfo.weather[0].icon}.png`;
-            temp.innerText = weatherInfo.main.temp;
-            windSpeed.innerText = weatherInfo.wind.speed;
-            humidity.innerText = weatherInfo.main.humidity;
-            cloudiness.innerText = weatherInfo.clouds.all;
+            temp.innerText = `${weatherInfo.main.temp} °C`;
+            windSpeed.innerText = `${weatherInfo.wind.speed} m/s`;
+            humidity.innerText = `${weatherInfo.main.humidity} %`;
+            cloudiness.innerText = `${weatherInfo.clouds.all} %`;
         // } else {
         //     console.error("Failed to render weather info. Check if all elements and weatherInfo properties exist.");
         // }
