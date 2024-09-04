@@ -147,7 +147,7 @@
             renderWeatherInfo(data);
         } catch (err) {
             console.error("Error fetching search weather info:", err);
-            alert("No data fetched");
+            alert("No such location");
             loadingScreen.classList.remove("active");
         }
     }

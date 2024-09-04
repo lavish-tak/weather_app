@@ -24,9 +24,9 @@ h1{
     width: 90%;
     color: #fff;
     display: flex;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
     justify-content: space-between;
 }
 .tab{
@@ -52,7 +52,8 @@ h1{
     margin-bottom: 10px;
 }
 .weather-container{
-    margin-block: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
 }
 .sub-container{
     display: flex;
